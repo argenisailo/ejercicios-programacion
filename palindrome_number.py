@@ -3,8 +3,8 @@ def isPalindrome(number):
     number_list = list(reversed(number_string))
 
     result = ''
-    for number_i in number_list:
-        result += number_i
+    for element in number_list:
+        result += element
     
     if result != number_string:
         return False
