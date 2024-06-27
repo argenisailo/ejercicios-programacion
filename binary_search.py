@@ -6,9 +6,9 @@ def binarySearchV1(arr, low, high, key):
         if arr[middle] == key:
             return middle
         elif arr[middle] > key:
-            return binarySearchV1(arr, low, (middle - 1), key)
+            return binarySearchV1(arr, low, (middle-1), key)
         else:
-            return binarySearchV1(arr, (middle + 1), high, key)
+            return binarySearchV1(arr, (middle+1), high, key)
     else:
         return -1
     
