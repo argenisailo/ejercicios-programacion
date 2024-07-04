@@ -8,7 +8,7 @@ class Stack:
     def pop(self):
         self.data.pop()
 
-    def print_stack(self):
+    def printStack(self):
         for element in self.data:
             print(element)
 
@@ -19,9 +19,9 @@ if __name__ == "__main__":
     s.push(10)
     s.push(9)
 
-    s.print_stack()
+    s.printStack()
 
     s.pop()
     s.pop()
 
-    s.print_stack()
+    s.printStack()
