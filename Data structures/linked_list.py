@@ -36,5 +36,29 @@ class LinkedList:
         if node.next is not None:
             node.next.prev = node.prev
 
+    def print_list(self):
+        current = self.head
+
+        while current:
+            print(f'{current.data} -->', end=' ')
+            current = current.next
+
+        print('None')
+
 if __name__ == "__main__":
-    arr = [4, 7, 8, 3, 2, 9, 5, 10, 6, 1]
+    ll = LinkedList()
+    ll.print_list()
+
+    ll.insert(Node(10))
+    ll.print_list()
+
+    ll.insert(Node(9))
+    ll.insert(Node(8))
+    ll.insert(Node(7))
+    ll.insert(Node(6))
+
+    ll.print_list()
+
+    delete = ll.search(7)
+    ll.delete(delete)
+    ll.print_list()
