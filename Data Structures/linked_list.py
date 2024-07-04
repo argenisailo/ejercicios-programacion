@@ -61,4 +61,4 @@ if __name__ == "__main__":
 
     delete = ll.search(7)
     ll.delete(delete)
-    ll.print_list()
+    ll.printList()
