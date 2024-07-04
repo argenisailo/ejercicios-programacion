@@ -36,7 +36,7 @@ class LinkedList:
         if node.next is not None:
             node.next.prev = node.prev
 
-    def print_list(self):
+    def printList(self):
         current = self.head
 
         while current:
@@ -47,17 +47,17 @@ class LinkedList:
 
 if __name__ == "__main__":
     ll = LinkedList()
-    ll.print_list()
+    ll.printList()
 
     ll.insert(Node(10))
-    ll.print_list()
+    ll.printList()
 
     ll.insert(Node(9))
     ll.insert(Node(8))
     ll.insert(Node(7))
     ll.insert(Node(6))
 
-    ll.print_list()
+    ll.printList()
 
     delete = ll.search(7)
     ll.delete(delete)
